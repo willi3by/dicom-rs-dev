@@ -1,0 +1,38 @@
+[package]
+name = "dicom-transfer-syntax-registry"
+version = "0.5.1"
+authors = ["Eduardo Pinho <enet4mikeenet@gmail.com>"]
+description = "A registry of DICOM transfer syntaxes"
+edition = "2018"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/Enet4/dicom-rs"
+keywords = ["dicom"]
+readme = "README.md"
+
+[features]
+default = ["rayon"]
+
+# inventory for compile time plugin-based transfer syntax registration
+inventory-registry = ['dicom-encoding/inventory-registry']
+
+# natively implemented image encodings
+native = ["jpeg", "rle"]
+# native JPEG support
+jpeg = ["jpeg-decoder"]
+# native RLE lossless support
+rle = []
+rayon = ["jpeg-decoder?/rayon"]
+
+[dependencies]
+dicom-core = { path = "../core", version = "0.5.2" }
+dicom-encoding = { path = "../encoding", version = "0.5.2" }
+lazy_static = "1.2.0"
+byteordered = "0.6"
+tracing = "0.1.34"
+
+[dependencies.jpeg-decoder]
+version = "0.3.0"
+optional = true
+
+[package.metadata.docs.rs]
+features = ["native"]

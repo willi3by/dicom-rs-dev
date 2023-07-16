@@ -1,0 +1,34 @@
+[workspace]
+members = [
+    "core",
+    "encoding",
+    "parser",
+    "transfer-syntax-registry",
+    "object",
+    "devtools/dictionary-builder",
+    "dictionary-std",
+    "dump",
+    "echoscu",
+    "encoding",
+    "findscu",
+    "fromimage",
+    "json",
+    "object",
+    "parent",
+    "parser",
+    "pixeldata",
+    "scpproxy",
+    "storescp",
+    "storescu",
+    "toimage",
+    "transfer-syntax-registry",
+    "ul",
+]
+
+# optimize JPEG decoder to run tests faster
+[profile.dev.package."jpeg-decoder"]
+opt-level = 2
+
+# optimize flate2 to run tests faster
+[profile.dev.package."flate2"]
+opt-level = 2
