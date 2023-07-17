@@ -76,7 +76,6 @@ pub use dicom_pixeldata as pixeldata;
 pub use dicom_transfer_syntax_registry as transfer_syntax;
 #[cfg(feature = "ul")]
 pub use dicom_ul as ul;
-#[cfg(feature = "json")]
 pub use dicom_json as json;
 
 // re-export dicom_value macro
