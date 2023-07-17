@@ -77,7 +77,6 @@
 //! # Ok::<(), serde_json::Error>(())
 //! ```
 
-pub mod json;
 pub mod de;
 pub mod ser;
 
