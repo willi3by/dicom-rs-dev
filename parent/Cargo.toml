@@ -29,3 +29,4 @@ dicom-object = { path = "../object", version = "0.5.4", default-features = false
 dicom-ul = { optional = true, path = "../ul", version = "0.4.4" }
 dicom-pixeldata = { optional = true, path = "../pixeldata", version = "0.1.5" }
 dicom-json = { path = "../json", version = "0.1.0" }
+dicomweb = { path = "../dicomweb", version = "0.1.0" }
