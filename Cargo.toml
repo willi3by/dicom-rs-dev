@@ -23,6 +23,7 @@ members = [
     "toimage",
     "transfer-syntax-registry",
     "ul",
+    "web-util"
 ]
 
 # optimize JPEG decoder to run tests faster
