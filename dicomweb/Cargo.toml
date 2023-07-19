@@ -1,0 +1,11 @@
+[workspace]
+
+members = [
+  "parent",
+  "client",
+  "server",
+  "util",
+  "examples/blocking_client",
+  "examples/async_client",
+  "examples/server_tide",
+]
