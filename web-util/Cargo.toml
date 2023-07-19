@@ -1,5 +1,5 @@
 [package]
-name = "dicom-json"
+name = "web-util"
 version = "0.1.0"
 authors = ["Eduardo Pinho <enet4mikeenet@gmail.com>"]
 edition = "2021"
