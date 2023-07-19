@@ -77,7 +77,7 @@ pub use dicom_transfer_syntax_registry as transfer_syntax;
 #[cfg(feature = "ul")]
 pub use dicom_ul as ul;
 pub use dicom_json as json;
-pub use dicomweb as web;
+pub use web_util as util;
 
 // re-export dicom_value macro
 pub use dicom_core::dicom_value;
